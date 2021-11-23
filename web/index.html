@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>museum online javascript</h1>
+    <h1 id="kopje">museum online javascript</h1>
+    <p id="mkblauw">maak achtergrond blauw</p>
+    <p id="mkgroen">maak achtergrond groen</p>
+
+    <script>
+        const kopje = document.getElementById("kopje")
+        const mkblauw = document.getElementById('mkblauw')
+        const mkgroen = document.getElementById('mkgroen')
+
+        kopje.style.backgroundColor = "red"
+
+        kopje.addEventListener('click',voeruitkopje);
+        mkblauw.addEventListener('click',voeruitblauw);
+        mkgroen.addEventListener('click', voeruitgroen);
+
+        function voeruitkopje(){
+
+            kopje.style.backgroundColor = "yellow";
+            kopje.style.color = "black";
+        }
+
+        function voeruitblauw(){
+
+            document.body.style.backgroundColor = "blue"
+            document.body.style.color = "white";
+            kopje.style.backgroundColor = "white";
+            kopje.style.color = "black";
+
+
+        }
+
+        function voeruitgroen(){
+
+            document.body.style.backgroundColor = "green";
+
+        }
+    </script>
 </body>
 </html>
