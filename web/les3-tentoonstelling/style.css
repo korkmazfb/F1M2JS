@@ -1,0 +1,40 @@
+body{
+    background-color:bisque;
+}
+
+#container{
+    background-color: black;
+    width: 700px;
+    height: 450px;
+    margin: auto;
+    padding: center;
+}
+
+h2{
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Smooch', cursive;
+    position: relative;
+   
+
+}
+
+button{
+    color: black;
+    background-color: red;
+    
+    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
