@@ -1,5 +1,7 @@
 const myImage = document.getElementById('myImage');
 const myTitle = document.getElementById('myTitle');
+const mytext = document.getElementById('mytext');
+
 
 let paintings = ["img/painting0.jpg",
 "img/painting1.jpg",
@@ -20,9 +22,12 @@ let titles = [
     "Boerderij in de Provence"
 ];
 
+
 function changeImage(index){
     myTitle.innerHTML = titles[index]
 
     myImage.src = paintings[index];
+
+    mytext.innerHTML = titles[index];
 }
 
